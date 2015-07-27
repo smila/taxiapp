@@ -48,7 +48,7 @@ function loginProcess(){
 
 		$.ajax({ //Process the form using $.ajax()
 					type      : 'POST', //Method type
-					url       : 'http://192.168.30.103/taxiapiserver/login-process.php', //Your form processing file URL
+					url       : 'http://ghkasa.com/taxiapiserver/login-process.php', //Your form processing file URL
 					data      : {username:username,password:password}, //Forms name
 					dataType  : 'json',
 					cache	 : false,
@@ -198,7 +198,7 @@ var carownerControlPage = tabris.create("Page", {
 										  var taxi_no = taxi_no;
 										  $.ajax({ //Process the form using $.ajax()
 											type      : 'POST', //Method type
-											url       : 'http://192.168.30.103/taxiapiserver/customer-service-request.php', //Your form processing file URL
+											url       : 'http://ghkasa.com/taxiapiserver/customer-service-request.php', //Your form processing file URL
 											data      : {taxi_no:taxi_no}, //Forms name
 											dataType  : 'json',
 											cache	 : false,
@@ -315,7 +315,7 @@ function notifyCarOwerProcess(username,taxino,startingLocation,destinationLocati
 
 		$.ajax({ //Process the form using $.ajax()
 					type      : 'POST', //Method type
-					url       : 'http://192.168.30.103/taxiapiserver/service-request-process.php', //Your form processing file URL
+					url       : 'http://ghkasa.com/taxiapiserver/service-request-process.php', //Your form processing file URL
 					data      : {username:username,taxino:taxino,startingLocation:startingLocation,destinationLocation:destinationLocation}, //Forms name
 					dataType  : 'json',
 					cache	 : false,
@@ -514,7 +514,7 @@ function validateCustReg(){
 
 		$.ajax({ //Process the form using $.ajax()
 					type      : 'POST', //Method type
-					url       : 'http://192.168.30.103/taxiapiserver/customer-registration-process.php', //Your form processing file URL
+					url       : 'http://ghkasa.com/taxiapiserver/customer-registration-process.php', //Your form processing file URL
 					data      : {fullname:fullname,mobileno:mobileno,usertype:'customer'}, //Forms name
 					dataType  : 'json',
 					cache	 : false,
@@ -571,7 +571,7 @@ function validateCarOwnReg(){
    
    		$.ajax({ //Process the form using $.ajax()
 					type      : 'POST', //Method type
-					url       : 'http://192.168.30.103/taxiapiserver/carowner-registration-process.php', //Your form processing file URL
+					url       : 'http://ghkasa.com/taxiapiserver/carowner-registration-process.php', //Your form processing file URL
 					data      : {fullname:fullname,mobileno:mobileno,car_no:car_no,car_type:car_type,serviceArea:serviceArea,usertype:'car owner'}, //Forms name
 					dataType  : 'json',
 					cache	 : false,
