@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+    id="com.taxiapp"
+    version="1.0.0"
+    xmlns:gap="http://phonegap.com/ns/1.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+ 
+    <name>Taxi App</name>
+    <description>
+        Taxi Application for GH
+    </description>
+    <author email="me@me.com" href="http://www.me.me">
+        Emmanuel Assimeku
+    </author>
+ 	<content src="package.json" />
+    <access origin="*" />
+	<gap:plugin name="nl.x-services.plugins.toast" version="2.0" />
+    <preference name="EnableDeveloperConsole" value="true"/>
+	<platform name="android"> 
+	 <icon src="Icon.png" />
+	</platform>
+</widget>
